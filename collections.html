@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Luxé Jewels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="diamondCanvas"></canvas>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LUXÉ JEWELS</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html" class="active">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Collections</h1>
+        <p>Discover timeless pieces crafted with passion</p>
+    </section>
+
+    <section class="collections-page">
+        <div class="container">
+            <div class="filters-sidebar">
+                <h3>Filters</h3>
+                
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <label><input type="checkbox" name="category" value="rings"> Rings</label>
+                    <label><input type="checkbox" name="category" value="necklaces"> Necklaces</label>
+                    <label><input type="checkbox" name="category" value="bracelets"> Bracelets</label>
+                    <label><input type="checkbox" name="category" value="earrings"> Earrings</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <label><input type="checkbox" name="price" value="0-500"> Under $500</label>
+                    <label><input type="checkbox" name="price" value="500-1000"> $500 - $1,000</label>
+                    <label><input type="checkbox" name="price" value="1000-2000"> $1,000 - $2,000</label>
+                    <label><input type="checkbox" name="price" value="2000+"> Over $2,000</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Material</h4>
+                    <label><input type="checkbox" name="material" value="gold"> Gold</label>
+                    <label><input type="checkbox" name="material" value="silver"> Silver</label>
+                    <label><input type="checkbox" name="material" value="platinum"> Platinum</label>
+                    <label><input type="checkbox" name="material" value="rose-gold"> Rose Gold</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Stone</h4>
+                    <label><input type="checkbox" name="stone" value="diamond"> Diamond</label>
+                    <label><input type="checkbox" name="stone" value="pearl"> Pearl</label>
+                    <label><input type="checkbox" name="stone" value="sapphire"> Sapphire</label>
+                    <label><input type="checkbox" name="stone" value="emerald"> Emerald</label>
+                </div>
+
+                <button class="reset-filters">Reset Filters</button>
+            </div>
+
+            <div class="products-container">
+                <div class="products-header">
+                    <p class="results-count"><span id="product-count">12</span> Products</p>
+                    <select id="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LUXÉ JEWELS</h3>
+                    <p>Timeless elegance in every piece</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxé Jewels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
